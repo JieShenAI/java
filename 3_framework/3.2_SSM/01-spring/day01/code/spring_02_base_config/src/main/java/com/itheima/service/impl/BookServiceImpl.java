@@ -10,6 +10,7 @@ public class BookServiceImpl implements BookService {
         System.out.println("book service save ...");
         bookDao.save();
     }
+
     public void setBookDao(BookDao bookDao) {
         this.bookDao = bookDao;
     }

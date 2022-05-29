@@ -8,11 +8,11 @@ public class BookDaoImpl implements BookDao {
     }
     //表示bean初始化对应的操作
     public void init(){
-        System.out.println("init...");
+        System.out.println("dao init...");
     }
     //表示bean销毁前对应的操作
     public void destory(){
-        System.out.println("destory...");
+        System.out.println("dao destory...");
     }
 
 }

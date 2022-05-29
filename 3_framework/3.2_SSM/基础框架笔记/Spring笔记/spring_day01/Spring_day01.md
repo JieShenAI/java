@@ -1138,6 +1138,8 @@ public class AppForInstanceUser {
 
 ##### 4.2.3.3 FactoryBean的使用
 
+<font color='red'>重要</font>
+
 具体的使用步骤为:
 
 (1)创建一个UserDaoFactoryBean的类，实现FactoryBean接口，重写接口的方法

@@ -18,11 +18,17 @@ public class AppForInstanceUser {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        UserDao userDao1 = (UserDao) ctx.getBean("userDao");
-        UserDao userDao2 = (UserDao) ctx.getBean("userDao");
+//        传统方法
+        UserDao userDao1 = (UserDao) ctx.getBean("userDaoInstance");
+        UserDao userDao2 = (UserDao) ctx.getBean("userDaoInstance");
         System.out.println(userDao1);
         System.out.println(userDao2);
 //        userDao.save();
+
+//        推荐方法
+        UserDao userDaoNew = (UserDao) ctx.getBean("userDao");
+        userDaoNew.save();
+
 
     }
 }

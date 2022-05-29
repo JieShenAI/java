@@ -15,7 +15,7 @@ public class AppForInstanceOrder {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        OrderDao orderDao = (OrderDao) ctx.getBean("orderDao");
+        OrderDao orderDao = (OrderDao) ctx.getBean("orderDaoStatic");
 
         orderDao.save();
 
